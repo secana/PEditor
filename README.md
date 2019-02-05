@@ -1,2 +1,3 @@
 # PEditor
-View and edit Protable Exexutable files.
+
+View and edit Portable Executable files.

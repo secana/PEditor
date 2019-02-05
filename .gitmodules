@@ -1,0 +1,3 @@
+[submodule "PeNet"]
+	path = PeNet
+	url = https://github.com/secana/PeNet.git
