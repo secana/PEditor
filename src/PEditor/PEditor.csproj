@@ -290,12 +290,11 @@
     <Resource Include="PEditor.ico" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\PeNet\PeNet.csproj">
-      <Project>{12794d4d-98ea-4a5c-92ea-d3282790c3d3}</Project>
+    <ProjectReference Include="..\..\PeNet\src\PeNet\PeNet.csproj">
+      <Project>{737f09af-fc6d-41c7-ad91-7728728981b3}</Project>
       <Name>PeNet</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

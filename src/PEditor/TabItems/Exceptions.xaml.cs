@@ -25,9 +25,9 @@ namespace PEditor.TabItems
             if (selected == null) return;
 
             // Convert string of format 0x... to an integer.
-            var funcStart = selected.FunctionStart.ToIntFromHexString();
-            var funcEnd = selected.FunctionEnd.ToIntFromHexString();
-            var uw = selected.UnwindInfo.ToIntFromHexString();
+            var funcStart = ((string) selected.FunctionStart).ToIntFromHexString();
+            var funcEnd = ((string) selected.FunctionEnd).ToIntFromHexString();
+            var uw = ((string) selected.UnwindInfo).ToIntFromHexString();
 
             // Find the RUNTIME_FUNCTION which was selected.
             var rt = _peFile.ExceptionDirectory.First(x => x.FunctionStart == funcStart
