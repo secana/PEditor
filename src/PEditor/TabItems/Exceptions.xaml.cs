@@ -43,7 +43,8 @@ namespace PEditor.TabItems
             tbUIFrameRegister.Text = rt.ResolvedUnwindInfo.FrameRegister.ToHexString();
             tbUIFrameOffset.Text = rt.ResolvedUnwindInfo.FrameOffset.ToHexString();
             tbUIExHandlerFuncEntry.Text = rt.ResolvedUnwindInfo.ExceptionHandler.ToHexString();
-            // TODO: display exception data as a hex array.
+            // TODO: Display exception data somehow.
+            // https://www.osronline.com/article.cfm^article=469.htm
             //tbUIExData.Text = string.Format("", rt.ResolvedUnwindInfo.ExceptionData);
 
             // Set the UNWIND_CODE structures for the UNWIND_INFO

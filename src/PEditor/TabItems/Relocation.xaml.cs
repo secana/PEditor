@@ -27,7 +27,7 @@ namespace PEditor.TabItems
 
             var reloc =
                 _peFile.ImageRelocationDirectory.First(
-                    x => x.VirtualAddress == selected.VirtualAddress.ToIntFromHexString());
+                    x => x.VirtualAddress == ((string) selected.VirtualAddress).ToIntFromHexString());
 
             foreach (var to in reloc.TypeOffsets)
             {
